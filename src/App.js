@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Landing from './Pages/Landing';
+import MainLayout from './Layouts/MainLayout';
+import EventLayout from './Layouts/EventLayout';
+import LoginSignup from './Pages/LoginSignup';
 
 function App() {
+  const [isEventActive] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {isEventActive ? (
+          <Route path="/" element={<EventLayout />} />
+        ) : (
+          <Route path="/" element={<Navigate to="/home" replace />} />
+        )}
+        <Route path="/home" element={<MainLayout />}>
+          <Route index element={<Landing />} />
+          <Route path="/home/login" element={<LoginSignup />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
