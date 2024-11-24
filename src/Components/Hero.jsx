@@ -1,26 +1,24 @@
 import React from "react";
 import hero from "../Assets/img-bg.jpg";
 import slogan from "../Assets/img-slogan.png";
+import './Scss/Hero.scss'; // Import SCSS file
 
 const Hero = ({ children }) => {
   return (
     <div
-      className="relative w-[98%] min-h-[5000px] bg-cover bg-center mx-auto"
+      className="hero-container"
       style={{
         backgroundImage: `url(${hero})`,
-        backgroundRepeat: "no-repeat",
       }}
     >
       <img
         src={slogan}
         alt="Slogan"
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[75%] mx-auto"
-        style={{
-          marginTop: "9rem",
-          marginLeft: "16rem",
-        }}
+        className="hero-slogan"
       />
-      <div className="relative z-10 ">{children}</div>
+      <div className="hero-children">
+        {children}
+      </div>
     </div>
   );
 };

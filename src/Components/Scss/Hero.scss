@@ -1,0 +1,26 @@
+/* Hero.scss */
+.hero-container {
+    position: relative;
+    width: 100%;
+    min-height: 5000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    .hero-slogan {
+      position: relative;
+      transform: translateY(15%);
+      width: 45%;
+      margin-left: 12%;
+    }
+  
+    .hero-children {
+      position: relative;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+  }
+  

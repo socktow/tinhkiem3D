@@ -1,61 +1,26 @@
 .download-container {
-    width: 100%;
-    min-height: 100vh; 
-    background-size: cover;
-    background-position: center center;  
-    background-repeat: no-repeat;
+    position: relative; /* Ensure the avatar is positioned relative to this container */
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: -170px;
+    justify-content: center;
+    align-items: center;
   }
   
-  .download-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; // Căn các phần tử bên trong theo chiều ngang
-    justify-content: center;
-    text-align: center;  // Đảm bảo nội dung căn giữa
+  .download-container img {
+    width: 100%; /* Make the background image stretch across the container */
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container without distorting */
   }
   
   .download-avatar {
-    width: 100px;  // Kích thước avatar có thể thay đổi
-    height: auto;
-    margin-top: 20px;  // Đảm bảo khoảng cách với các phần tử khác
+    position: absolute; /* Position the avatar inside the container */
+    top: 50%; /* Center the avatar vertically */
+    left: 15%; /* Center the avatar horizontally */
+    transform: translate(-50%, -40%); /* Adjust to exactly center the avatar */
+    overflow: hidden; /* Ensure no part of the avatar is outside the container */
   }
   
-  .download-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 20px;
-  }
-  
-  .download-btn {
-    position: relative;
+  .download-avatar img {
     width: 100%;
-    
-    img {
-      width: 100%;
-    }
-  
-    .btn-icon {
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    height: 100%;
+    object-fit: cover; /* Ensure the avatar image fits within the container */
   }
-  
-  .download-images {
-    margin-top: 20px;
-    
-    img {
-      display: block;
-      margin-bottom: 16px;
-    }
-  }
-  
