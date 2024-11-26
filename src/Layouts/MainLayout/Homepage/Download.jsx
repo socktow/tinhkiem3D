@@ -19,39 +19,30 @@ const Download = () => {
       </div>
 
       <div className="download-method">
-        <a href="#" className="download-link">
+        <a href="https://example.com" className="download-link">
           <div className="download-btn">
             <img src={btn} alt="btn" className="btn-background" />
             <div className="btn-icon">
               <img src={iconios} alt="iconios" className="icon" />
-              <span className="download-text">
-                Tải Xuống <br />
-                IOS
-              </span>
+              <span className="download-text">IOS</span>
             </div>
           </div>
         </a>
-        <a href="#" className="download-link">
+        <a href="https://example.com" className="download-link">
           <div className="download-btn">
             <img src={btn} alt="btn" className="btn-background" />
             <div className="btn-icon">
-              <img src={iconandroid} alt="iconios" className="icon" />
-              <span className="download-text">
-                Tải Xuống <br />
-                Android
-              </span>
+              <img src={iconandroid} alt="iconandroid" className="icon" />
+              <span className="download-text">Android</span>
             </div>
           </div>
         </a>
-        <a href="#" className="download-link">
+        <a href="https://example.com" className="download-link">
           <div className="download-btn">
             <img src={btn} alt="btn" className="btn-background" />
             <div className="btn-icon">
-              <img src={iconpc} alt="iconios" className="icon" />
-              <span className="download-text">
-                Tải Xuống <br />
-                PC
-              </span>
+              <img src={iconpc} alt="iconpc" className="icon" />
+              <span className="download-text">Giả Lập</span>
             </div>
           </div>
         </a>
@@ -63,7 +54,7 @@ const Download = () => {
           <img src={napthe} alt="napthe" />
         </div>
         <div className="Gift-code">
-          <span>Gift Code</span>
+          <span>GiftCode</span>
           <img src={giftcode} alt="giftcode" />
         </div>
       </div>

@@ -11,8 +11,8 @@ const Landing = () => {
     <Hero>
       <div>
          <Download />
-        {/* // <NewFeed />
-        // <InfoGuide />
+          <NewFeed />
+        {/* // <InfoGuide />
         // <DoGiam />
         // <TieuDiemDacSac /> */}
       </div>
