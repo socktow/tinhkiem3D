@@ -1,0 +1,93 @@
+.download-container {
+  position: relative; /* Ensure the avatar is positioned relative to this container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-container img {
+  width: 100%; /* Make the background image stretch across the container */
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the container without distorting */
+}
+
+.download-avatar {
+  position: absolute; /* Position the avatar inside the container */
+  top: 50%; /* Center the avatar vertically */
+  left: 15%; /* Center the avatar horizontally */
+  transform: translate(-40%, -40%); /* Adjust to exactly center the avatar */
+  overflow: hidden; /* Ensure no part of the avatar is outside the container */
+}
+
+.download-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the avatar image fits within the container */
+}
+
+.download-guide {
+  position: absolute; /* Đặt nó nằm trong download-container */
+  transform: translate(80%, 2%);
+  display: flex; /* Dùng flexbox để các hình nằm ngang */
+  gap: 20px; /* Khoảng cách giữa các hình */
+  align-items: center;
+
+  img {
+    width: 150px; /* Đặt kích thước cố định cho hình ảnh */
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+.download-method {
+  position: absolute;
+  transform: translate(-20%, 2%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .download-link {
+    text-decoration: none;
+
+    .download-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 230px;
+      height: 70px;
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+
+      .btn-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      .btn-icon {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        .icon {
+          width: 40px;
+          height: auto;
+          margin-right: 10px;
+        }
+
+        .download-text {
+          display: block;
+          font-size: 1.498rem;
+          color: #334c99;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+}

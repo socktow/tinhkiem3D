@@ -1,20 +1,20 @@
 import React from "react";
-import Hero from "../Components/Hero";
-import Download from "../Components/Download";
-import NewFeed from "../Components/NewFeed";
-import InfoGuide from "../Components/InfoGuide";
-import DoGiam from "../Components/DoGiam";
-import TieuDiemDacSac from "../Components/TieuDiemDacSac";
+import Hero from "../Layouts/MainLayout/Homepage/Hero";
+import Download from "../Layouts/MainLayout/Homepage/Download";
+import NewFeed from "../Layouts/MainLayout/Homepage/NewFeed";
+import InfoGuide from "../Layouts/MainLayout/Homepage/InfoGuide";
+import DoGiam from "../Layouts/MainLayout/Homepage/DoGiam";
+import TieuDiemDacSac from "../Layouts/MainLayout/Homepage/TieuDiemDacSac";
 
 const Landing = () => {
   return (
     <Hero>
       <div>
-        <Download />
-        <NewFeed />
-        <InfoGuide />
-        <DoGiam />
-        <TieuDiemDacSac />
+         <Download />
+        {/* // <NewFeed />
+        // <InfoGuide />
+        // <DoGiam />
+        // <TieuDiemDacSac /> */}
       </div>
     </Hero>
   );

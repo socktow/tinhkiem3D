@@ -1,6 +1,6 @@
 import React from "react";
-import hero from "../Assets/img-bg.jpg";
-import slogan from "../Assets/img-slogan.png";
+import hero from "../../../Assets/img-bg.jpg";
+import slogan from "../../../Assets/img-slogan.png";
 import './Scss/Hero.scss'; // Import SCSS file
 
 const Hero = ({ children }) => {
